@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunting, Batu, Kertas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">GUNTING BATU KERTAS</h1>
+    </header>
+    <main class="main">
+      <div class="scoreboard">
+        <h2 class="score-info" id="infoskor">Tentukan Pilihan Anda !</h2>
+        <h3 class="score-message" id="pesanskor">
+          Peraih 5 poin pertama akan menang
+        </h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="pilihan" id="pilihanpemain">❔</div>
+            <p class="Skor" id="skorpemain">Pemain : 0</p>
+          </div>
+          <div class="score-box">
+            <div class="pilihan" id="pilihanbot">❔</div>
+            <p class="Skor" id="Skorbot">Bot : 0</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="pilihan">✊</div>
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="pilihan">✋</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="pilihan">✌</div>
+        </button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+      Selamat Bermain ! - El
+      </a>
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Coba lagi</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="permainan.js"></script>
+  </body>
+</html>
